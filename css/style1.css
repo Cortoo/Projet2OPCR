@@ -1,0 +1,204 @@
+/* Font Raleway */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap')
+
+/* All */
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#main{
+    margin: 0 50px 50px;
+}
+
+#main{
+    margin: 0 50px 50px;
+}
+
+.flex{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+
+header{
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.logo{
+    margin-top: 30px;
+    flex: 1;
+}
+
+.logo_frame{
+  width: 61.09px;
+}
+
+/* Nav */
+
+nav li{
+    padding-top: 40px;
+}
+
+nav a{
+    padding: 40px 30px 0;
+}
+
+nav li a:hover{
+    color: #0065FC;
+    padding-top: 38px;
+    border-top: 2px solid #0065FC;
+}
+
+/* Search bar */
+
+.search{
+    margin-bottom: 30px;
+}
+
+.search h2{
+    margin-bottom: 10px;
+}
+
+.search p{
+    margin-top: 10px;
+}
+
+.searchBar{
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.containerMarker{
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+    flex-shrink: 0;
+}
+
+.containerMarker i{
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.searchInput{
+    border: 1px solid #f2f2f2;
+    padding: 0 0 0 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 230px;
+}
+
+.searchInput::placeholder{
+    color: black;
+}
+
+.searchButton{
+    width: 130px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.searchButton i{
+    display: none;
+}
+
+/* Filters */
+
+.textFilter{
+    align-self: center;
+}
+
+.filters{
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.filter{
+    align-items: center;
+    height: 46px;
+    border: 2px solid #D9D9D9;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+
+
+
+
+.filter:hover{
+    cursor: pointer;
+    background-color: #DEEBFF;
+    color: black;
+}
+
+.filterList{
+    flex-wrap: wrap;
+}
+
+.iconFilter{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 10px;
+    
+}
+
+.iconFilter i{
+    margin: auto;
+    color: #0065FC;
+    
+}
+
+.iconInfo{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 1rem;
+    margin-right: 10px;
+}
+
+.iconInfo i{
+    margin: auto;
+    font-size: .9rem;
+    color: #0065FC;  
+}
+
+
+/* Hotels Frames */
+.blueStar{
+    color: #0065FC;
+}
+
+.greyStar{
+    color: #f2f2f2;
+}
+
+.hotels, .popular{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 40px;
+}
