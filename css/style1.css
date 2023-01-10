@@ -1,21 +1,20 @@
 /* Font Raleway */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap')
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 /* All */
 
 body{
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
+    
+    margin: 40px;
+    font-family: "Raleway", sans-serif;
 }
 
 #main{
-    margin: 0 50px 50px;
+    margin: 0 40px 40px;
 }
 
-#main{
-    margin: 0 50px 50px;
-}
+
 
 .flex{
     display: flex;
@@ -148,8 +147,6 @@ nav li a:hover{
 
 
 
-
-
 .filter:hover{
     cursor: pointer;
     background-color: #DEEBFF;
@@ -197,8 +194,264 @@ nav li a:hover{
     color: #f2f2f2;
 }
 
+.containerHotels{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    
+}
+
 .hotels, .popular{
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 40px;
+    
+}
+
+
+.hotels{
+width: 75%;
+}
+
+.hotelsFlex {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    margin: 30px 0 40px;
+    
+}
+
+
+.hotelFrame img{   
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.hotelFrame {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 246px;
+    height: 199px;
+    box-shadow: 0 0 7px #c1c1c1;;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    
+}
+
+.hotelDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 0px 10px;
+    
+}
+
+.hotelDescription p{
+    margin: 0;
+}
+
+.hotelRate{
+    word-spacing: -1ch;
+}
+
+.fa-star{
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.showMore{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+/*Popular*/
+
+.popularIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.popularIcon i{
+    color: #0065FC;
+}
+
+.popularFrame{
+    height: 145px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 7px #c1c1c1;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.popularFrame img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popularDescription{
+    flex: 1;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.hotelName{
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.popularDescription .hotelName + p{
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/* Activities*/
+
+.activitiesFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.activityFrame img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 389px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activityFrame {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 302px;
+    height: 444px;
+    box-shadow: 0 0 7px #c1c1c1;;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 0px solid #fff;
+}
+
+.activityDescription{
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+/* Footer */
+
+footer{
+    padding: 40px 50px 50px;
+    background-color: #f2f2f2;
+    margin: 50px 50px 0 50px;
+}
+
+footer div{
+    flex: 1;
+}
+
+
+footer li{
+    margin-bottom: 15px;
+}
+
+footer a:hover{
+    font-weight: 600;
+    color: #0065FC;
+}
+
+
+
+
+
+
+/* Tablet version */
+@media only screen and (max-width: 1024px){
+
+    /* Search - Tablet */
+    .filters{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .textFilter{
+        align-self: flex-start;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .filter{
+        margin: 0 1rem 1rem 0;
+    }
+
+    
+    /* Hotels - Tablet */
+    
+    .hotelsFlex{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .hotels {
+        width: 90%;
+    }
+    .hotelsFrame{
+        height: 199px;
+        width: 100%;
+    }
+    /* Popular - Tablet */
+
+    .popularTab{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .popularFrame{
+        width: 252px;
+        height: 70%;
+        max-height: 267px;
+    }
+    .popular{
+        margin: 0 0 20px;
+    }
+
+    .popularFrame{
+        height: 180px;
+    }
+
+
+    .containerHotels{
+        flex-direction: column;
+    }
+
+    /*Activities - Tablet */
+
+    .activitiesFlex{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .activityFrame{
+        height: 267px;
+        width: 182px;
+    }
 }
