@@ -1,0 +1,797 @@
+/* Font Raleway */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+a, em, img, strong, b, u, i, center, ol, ul, li,
+form, label, legend, article, aside, footer, header,
+menu, nav, section 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFFF;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 61px;
+    height: 19px;
+    padding-top: 44px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav_hotels {
+    text-decoration: none;
+    color: black;
+    padding-top: 44px;
+}
+    
+#nav_hotels:hover, #nav_activities:hover {
+    border-top: #0065FC 2px solid;
+    color: #0065FC;
+}
+
+#nav_activities {
+    margin-left: 67px;
+    text-decoration: none;
+    color: black;
+    padding-top: 44px;
+}
+
+
+/* Main */
+/* Partie haute */
+
+main {
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 1.37rem;/*22px*/
+}
+
+#nav_description p {
+    padding-top: 8px;
+}
+
+/* Formulaire */
+
+form {
+    display: flex;
+    margin-top: 20px;
+}
+
+#search_Icon {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    padding: 17px;
+}
+
+#searchBar {
+    font-weight: bold;
+    font-size: 1.12rem;/*18px*/
+    border: 1px solid #F2F2F2;
+    padding-left: 17px;
+    outline: none;
+}
+
+#searchBar::placeholder{
+    color: black;
+}
+
+#searchButton {
+    color: white;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    padding: 16px;
+    font-size: 1.12rem;/*18px*/
+    font-weight: bold;
+}
+
+#searchButton:hover {
+    cursor: pointer;
+}
+
+#glass {
+    display: none;
+}
+
+/* Filtres */
+
+#filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 45px;
+}
+
+#filters p {
+    font-size: 1.12rem;/*18px*/
+    font-weight: bold;
+}
+
+#container_filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 67%;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding : 15px;
+}
+
+.filter:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.filter i {
+    color: #0065FC;
+}
+
+.texte_filter {
+    color: black;
+    font-weight: bold;
+    font-size: 1.06rem;/*17px*/
+    padding-left: 10px;
+}
+
+#containerInfo {
+    display:flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#containerInfo i {
+    border-radius: 20px;
+    border: 1px solid #D9D9D9;
+    color: #0065FC;
+    padding: 10px 15px;
+}
+
+#text_Info {
+    margin-left: 11px;
+}
+
+
+/* Hotels */
+
+#container_Top_Hotels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#container_Hotels {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    width: 67%;
+}
+
+#container_Hotels h2 {
+    font-size: 22px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+#container_Cards_Hotels{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-top: 23px;
+    padding-left: 40px;
+}
+
+.card_Hotel {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    width: 30%;
+    height: 199px;
+    margin-bottom: 30px;
+    padding-bottom:11px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+    border: 5px solid #FFFFFF;
+}
+
+.card_Hotel a {
+    text-decoration: none;
+    color: black;
+}
+
+.card_Hotel img {
+    width: 100%;
+    height: 65%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.description_Card_Hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 11px;
+}
+
+.description_Card_Hotel h3 {
+    font-size: /*1rem*/16px;
+}
+
+.description_Card_Hotel p {
+    font-size: /*0.87rem*/14px;
+    padding-top: 5px;
+}
+
+.star_blue {
+    display: flex;
+    flex-direction: row;
+    color: #0065fc;
+    font-size: 12px;
+    padding-top: 9px;
+}
+
+.star_grey i {
+    color: #F2F2F2;
+    display: flex;
+    font-size: 12px;
+}
+
+#show_More {
+    font-size: 1.12rem;/*18px*/
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 40px;
+    text-decoration: none;
+    color: black;
+
+}
+
+#show_More:hover{
+    cursor: pointer; 
+}
+
+
+
+
+/* Popular */
+
+#container_Popular {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    height: 625px;
+}
+
+#popular_Title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 41px;
+}
+
+#popular_Title i {
+    color: #0065fc;
+}
+
+#container_Cards_Popular {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.card_Popular {
+    width: 80%;
+    background-color: #FFFFFF;
+    border-radius: 20px ;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+}
+
+.card_Popular a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+}
+
+.card_Popular img {
+    box-sizing: border-box;
+    object-fit: cover;
+    width: 40%;
+    height: 144px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.description_Card_Popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+}
+
+.popularDescription h3 {
+    font-size: 16px;
+}
+
+.popularDescription p {
+    font-size: 14px;
+    padding-top:  7px;
+}
+
+
+/* Activities */
+
+#activity {
+    margin-top: 60px;
+}
+
+#activity h2 {
+    font-size: 1.37rem;/*22px*/
+}
+
+#container_activities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+
+.card_Activity {
+    width: 22%;
+    height: 445px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+}
+
+.card_Activity a {
+    text-decoration: none;
+    color: black;
+}
+
+.card_Activity img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+}
+
+.card_Activity h3 {
+    padding-left: 19px;
+    font-size: 1rem;/*16px*/
+}
+.activityDescription {
+    display: flex;
+    align-items: center;
+    height: 12%;
+}
+
+/* Footer */
+
+#about {
+    background-color: #F2F2F2;
+    margin-top: 61px;
+    height: 225px;
+}
+
+#container_All_Footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 45px;
+    padding-left: 70px;
+}
+
+.container_footer {
+    width: 33%;
+}
+
+.container_footer p {
+    font-size: 1.12rem;/*18px*/
+    font-weight: bold;
+
+}
+
+.container_footer ul{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+}
+
+.container_footer li {
+    padding-top: 12px;
+}
+
+.container_footer a {
+    text-decoration: none;
+    color: black;
+}
+
+
+ /* Tablet Version */
+
+@media screen and (max-width:992px) {
+
+body {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/* Header */
+
+#nav_hotels {
+    color: black;
+}
+
+#nav_hotels:hover, #nav_activities:hover {
+    border-top: none;
+    color: black;
+}
+
+#container_filters {
+    width: 100%;
+}
+
+/* Section */
+
+#container_Top_Hotels {
+    flex-direction: column;
+}
+
+/* Hébergements */
+
+#container_Hotels {
+    width: 100%;
+    height: 626px;
+}
+
+/* Les plus populaires */
+
+#container_Popular {
+    width: 100%;
+    height: 278px;
+    margin-top: 53px;
+}
+
+#popular_Title {
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#container_Cards_Popular {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 144px;
+    padding-top: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.card_Popular {
+    width: 32%;
+}
+
+.description_Card_Popular {
+    padding-left: 10px;
+    
+}
+
+.popularDescription h3 {
+    font-size: 14px;
+}
+
+.popularDescription p {
+    font-size: 13px;
+}
+
+
+/* Activités */
+
+#activity {
+    height: 387px;
+}
+
+.card_Activity {
+    height: 267px;
+    margin-top: 25px;
+}
+
+.card_Activity img {
+    height: 80%;
+}
+
+.activityDescription {
+    height: 20%;
+}
+
+}
+
+/* Mobile Version */
+
+@media screen and (max-width:768px) {
+
+body {
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    display: block;
+    text-align: center;
+    
+}
+
+header img {
+    padding-top: 21px;
+}
+
+#nav_hotels {
+    padding-bottom: 23px;
+    width: 50%;
+    border-bottom: 3px solid #F2F2F2;
+}
+
+#nav_activities {
+    width: 50%;
+    padding-bottom: 23px;
+    margin-left: 0;
+    border-bottom: 3px solid #F2F2F2;
+}
+
+#nav_hotels:hover, #nav_activities:hover {
+    color: #0065FC;
+    border-bottom: #0065FC 3px solid;
+}
+
+/* Main */
+
+main {
+    margin-top: 31px;
+}
+
+#nav_description {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+form {
+    margin-top: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#searchBar {
+    width: 100%;
+}
+
+#searchButton {
+    display: none;
+}
+
+#glass {
+    display: flex;
+    padding: 17px;
+    font-size: 1.06rem;/*17px;*/
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+#filters {
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#filters p {
+    margin-bottom: 15px;
+}
+
+#container_filters {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 14px;
+    row-gap: 17px;
+}
+
+.filter {
+    width: 35%;
+    height: 50px;
+    padding: 0;
+    padding-left: 13px;
+    padding-right: 20px;
+}
+
+.filter i {
+    font-size: 1.37rem;/*22px*/
+}
+
+.texte_filter {
+    font-size: 0.68rem;/*11px*/
+
+}
+
+#containerInfo {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* Sections */
+
+#container_Top_Hotels {
+    flex-direction: column-reverse;
+    margin-top: 0;
+}
+
+/* Les plus populaires */
+
+#container_Popular{
+    height: 580px;
+    border-radius: 0;
+}
+
+#popular_Title  {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 28px;
+}
+
+#container_Cards_Popular {
+    flex-direction: column;
+    height: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card_Popular  {
+    width: 100%;
+}
+
+.card_Popular  a {
+    justify-content: space-between;
+}
+
+.popularDescription h3 {
+    font-size: 16px;
+}
+
+.popularDescription p {
+    font-size: 14px;
+}
+
+/* Hébergements */
+
+#container_Hotels {
+    height: auto;
+    background-color: #FFFFFF;
+}
+
+#container_Hotels h2 {
+    padding-left: 20px;
+}
+
+#container_Cards_Hotels {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card_Hotel {
+    width: 100%;
+}
+
+.card_Hotel img {
+    width: 100%;
+}
+
+#show_More  {
+    display: none;
+}
+
+/* Activités à Marseille */
+
+#activity {
+    height: 886px;
+    padding-left:  20px;
+    padding-right: 20px;
+}
+
+#activities_section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+    margin-bottom: 0;
+}
+
+#container_activities {
+    flex-direction: column;
+    padding-top: 0;
+    height: 882px;
+}
+
+.card_Activity {
+    width: 100%;
+    height: 190px;
+    margin-top: 0;
+}
+
+.card_Activity img {
+    height: 134px;
+}
+
+.activityDescription {
+    height: 25%;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 80px
+}
+
+#about {
+    height: 501px;
+}
+
+#container_All_Footer {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    padding-left: 20px;
+}
+
+.container_footer {
+    width: 100%;
+}
+
+}
