@@ -47,7 +47,7 @@ nav {
 #nav_hotels {
     text-decoration: none;
     color: black;
-    padding-top: 44px;
+    padding-top: 48px;
 }
     
 #nav_hotels:hover, #nav_activities:hover {
@@ -55,30 +55,35 @@ nav {
     color: #0065FC;
 }
 
+#nav_hotels, #nav_activities {
+    border-top: transparent 2px solid;
+}
+
 #nav_activities {
-    margin-left: 67px;
     text-decoration: none;
     color: black;
-    padding-top: 44px;
+    padding-top: 48px;
+    margin-left: 67px;
 }
 
 
 /* Main */
-/* Partie haute */
 
 main {
     margin-top: 60px;
 }
 
 h1 {
-    font-size: 1.37rem;/*22px*/
+    font-size: 1.4rem;
 }
 
 #nav_description p {
     padding-top: 8px;
 }
 
-/* Formulaire */
+
+/* Search*/
+/* Form*/
 
 form {
     display: flex;
@@ -92,15 +97,16 @@ form {
     padding: 17px;
 }
 
-#searchBar {
-    font-weight: bold;
-    font-size: 1.12rem;/*18px*/
+#recherche {
+    
     border: 1px solid #F2F2F2;
     padding-left: 17px;
     outline: none;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-#searchBar::placeholder{
+#recherche::placeholder{
     color: black;
 }
 
@@ -110,7 +116,7 @@ form {
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     padding: 16px;
-    font-size: 1.12rem;/*18px*/
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -132,7 +138,7 @@ form {
 }
 
 #filters p {
-    font-size: 1.12rem;/*18px*/
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -164,7 +170,7 @@ form {
 .texte_filter {
     color: black;
     font-weight: bold;
-    font-size: 1.06rem;/*17px*/
+    font-size: 1.1rem;
     padding-left: 10px;
 }
 
@@ -199,6 +205,7 @@ form {
     background-color: #F2F2F2;
     border-radius: 30px;
     width: 67%;
+    padding-bottom: 30px;
 }
 
 #container_Hotels h2 {
@@ -222,7 +229,7 @@ form {
     background-color: #FFFFFF;
     width: 30%;
     height: 199px;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
     padding-bottom:11px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
     border: 5px solid #FFFFFF;
@@ -251,12 +258,12 @@ form {
 }
 
 .description_Card_Hotel h3 {
-    font-size: /*1rem*/16px;
+    font-size: 1rem;
 }
 
 .description_Card_Hotel p {
-    font-size: /*0.87rem*/14px;
     padding-top: 5px;
+    font-size: 0.9rem;
 }
 
 .star_blue {
@@ -274,7 +281,7 @@ form {
 }
 
 #show_More {
-    font-size: 1.12rem;/*18px*/
+    font-size: 1.12rem;
     font-weight: bold;
     padding-top: 10px;
     padding-left: 40px;
@@ -299,6 +306,7 @@ form {
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 625px;
+    padding-bottom: 30px;
 }
 
 #popular_Title {
@@ -372,7 +380,7 @@ form {
 }
 
 #activity h2 {
-    font-size: 1.37rem;/*22px*/
+    font-size: 1.37rem;
 }
 
 #container_activities {
@@ -404,7 +412,7 @@ form {
 
 .card_Activity h3 {
     padding-left: 19px;
-    font-size: 1rem;/*16px*/
+    font-size: 1rem;
 }
 .activityDescription {
     display: flex;
@@ -432,7 +440,7 @@ form {
 }
 
 .container_footer p {
-    font-size: 1.12rem;/*18px*/
+    font-size: 1.12rem;
     font-weight: bold;
 
 }
@@ -456,7 +464,7 @@ form {
 
  /* Tablet Version */
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:991px) {
 
 body {
     padding-left: 70px;
@@ -478,20 +486,28 @@ body {
     width: 100%;
 }
 
+.texte_filter {
+    font-size: 0.9rem;
+}
+
 /* Section */
 
 #container_Top_Hotels {
     flex-direction: column;
 }
 
-/* Hébergements */
+/* Hotels */
 
 #container_Hotels {
     width: 100%;
     height: 626px;
 }
 
-/* Les plus populaires */
+.description_Card_Hotel h3 {
+    font-size: 0.9rem;
+}
+
+/* Most Popular */
 
 #container_Popular {
     width: 100%;
@@ -532,7 +548,7 @@ body {
 }
 
 
-/* Activités */
+/* Activities */
 
 #activity {
     height: 387px;
@@ -555,7 +571,7 @@ body {
 
 /* Mobile Version */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 
 body {
     padding: 0;
@@ -608,7 +624,7 @@ form {
     padding-right: 20px;
 }
 
-#searchBar {
+#recherche {
     width: 100%;
 }
 
@@ -619,7 +635,7 @@ form {
 #glass {
     display: flex;
     padding: 17px;
-    font-size: 1.06rem;/*17px;*/
+    font-size: 1.06rem;
     color: white;
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
@@ -654,11 +670,11 @@ form {
 }
 
 .filter i {
-    font-size: 1.37rem;/*22px*/
+    font-size: 1.37rem;
 }
 
 .texte_filter {
-    font-size: 0.68rem;/*11px*/
+    font-size: 0.9rem;
 
 }
 
@@ -673,7 +689,7 @@ form {
     margin-top: 0;
 }
 
-/* Les plus populaires */
+/* Most Popular */
 
 #container_Popular{
     height: 580px;
@@ -709,7 +725,7 @@ form {
     font-size: 14px;
 }
 
-/* Hébergements */
+/* Hotels */
 
 #container_Hotels {
     height: auto;
@@ -738,7 +754,7 @@ form {
     display: none;
 }
 
-/* Activités à Marseille */
+/* Activities */
 
 #activity {
     height: 886px;
@@ -793,4 +809,4 @@ footer {
 .container_footer {
     width: 100%;
 }
-}
+} 
